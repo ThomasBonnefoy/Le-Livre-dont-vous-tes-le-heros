@@ -38,6 +38,29 @@ L'objectif est de proposer un outil complet permettant de passer d'un simple tex
 
 ---
 
+## Aperçu
+
+### Export web : *La Caverne Maudite*
+
+Le livre exemple exporté par l'application (dossier `docs/`) : carte des étapes du récit, puis une page par chapitre avec PV, XP et inventaire conservés d'une page à l'autre.
+
+| Carte des étapes | Une page du récit |
+|:--:|:--:|
+| ![Page d'accueil de l'export web : carte interactive des étapes de La Caverne Maudite](docs/images/export-web-accueil.png) | ![Page « La salle aux gobelins » avec barre PV/XP/objets et deux choix](docs/images/export-web-page.png) |
+
+### De l'écriture à la publication
+
+```mermaid
+flowchart LR
+    E[Édition<br/>pages et choix] --> V[Vérification<br/>pages inaccessibles, impasses]
+    V --> L[Lecture<br/>PV, XP, inventaire]
+    V --> X[Export web<br/>index.html + pageN.html]
+```
+
+<!-- TODO : ajouter des captures de l'application Qt (docs/images/editeur.png, docs/images/lecture.png) -->
+
+---
+
 ## Objectifs pédagogiques
 
 Cette SAÉ mobilise principalement trois compétences du BUT Informatique :
